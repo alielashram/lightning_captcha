@@ -1,0 +1,953 @@
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-10-22 18:36:23 -0700
+
+ActionController::RoutingError (No route matches "/posts/new"):
+  
+
+Rendered /Users/aliel-ashram/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 18:37:00 -0700
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 18:37:11 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Completed   in 21ms
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  config/application.rb:46:in `build_resource'
+
+Rendered /Users/aliel-ashram/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /Users/aliel-ashram/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.3ms)
+Rendered /Users/aliel-ashram/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.6ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (29.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (2.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to DeviseCreateUsers (20100904174213)
+  [1m[36mSQL (0.9ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(128) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "remember_token" varchar(255), "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35mSQL (0.2ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+  [1m[35mSQL (0.3ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20100904174213')[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 18:38:28 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (3.2ms)
+Rendered devise/registrations/new.html.erb within layouts/application (139.9ms)
+Completed 200 OK in 174ms (Views: 150.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382492308" for 127.0.0.1 at 2013-10-22 18:38:28 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382492308"}
+Rendered text template (0.0ms)
+Sent data  (25097.0ms)
+Completed 200 OK in 182226ms (Views: 15967.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 18:41:34 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (76.5ms)
+Rendered devise/registrations/new.html.erb within layouts/application (2662.7ms)
+Completed 200 OK in 6077ms (Views: 3192.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 18:41:54 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (3.0ms)
+Rendered devise/registrations/new.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 106ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 18:42:05 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (40.8ms)
+Rendered devise/registrations/new.html.erb within layouts/application (72.5ms)
+Completed 200 OK in 122ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 18:42:06 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.6ms)
+Rendered devise/registrations/new.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 98ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 18:42:06 -0700
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 75ms (Views: 73.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 18:42:41 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.7ms)
+Rendered devise/registrations/new.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 65ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382492561" for 127.0.0.1 at 2013-10-22 18:42:41 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382492561"}
+Rendered text template (0.0ms)
+Sent data  (1.1ms)
+Completed 200 OK in 455ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-10-22 18:43:06 -0700
+  Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mNWvHS/Ym8RVoJa2p8MvJZhKlvEAQjRrB8muTD+FbAw=", "user"=>{"email"=>"123@123.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "captcha"=>"62cb6"}, "commit"=>"Sign up"}
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (12.5ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('123@123.com')) LIMIT 1
+Rendered devise/shared/_links.erb (2.5ms)
+Rendered devise/registrations/new.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 886ms (Views: 37.4ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/captcha?i=1382492587" for 127.0.0.1 at 2013-10-22 18:43:07 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382492587"}
+Rendered text template (0.0ms)
+Sent data  (1.2ms)
+Completed 200 OK in 181ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-10-22 18:43:24 -0700
+  Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mNWvHS/Ym8RVoJa2p8MvJZhKlvEAQjRrB8muTD+FbAw=", "user"=>{"email"=>"123@123.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "captcha"=>"caab4"}, "commit"=>"Sign up"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('123@123.com')) LIMIT 1[0m
+  [1m[35mAREL (44.7ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('123@123.com', '$2a$10$IGpho8/uMdFmP3Nr7hxQhukhTZ2/BeyxcQiS.vz/07fT7Tzvd7E9i', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2013-10-23 01:43:24.499584', '2013-10-23 01:43:24.499584')
+  [1m[36mAREL (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-10-23 01:43:24.580570', "current_sign_in_at" = '2013-10-23 01:43:24.580570', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-10-23 01:43:24.623883' WHERE ("users"."id" = 1)[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 623ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 18:43:24 -0700
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20100904174213)
+Migrating to CreatePosts (20131023014531)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (28.6ms)[0m  [1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20131023014531')
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("posts")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 18:52:10 -0700
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (64.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered posts/index.html.erb within layouts/application (227.6ms)
+Completed 200 OK in 289ms (Views: 173.1ms | ActiveRecord: 65.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-10-22 18:52:15 -0700
+  Processing by PostsController#new as HTML
+  [1m[35mUser Load (1.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Rendered posts/_form.html.erb (32.6ms)
+Rendered posts/new.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 206ms (Views: 48.1ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2013-10-22 18:52:18 -0700
+  Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mNWvHS/Ym8RVoJa2p8MvJZhKlvEAQjRrB8muTD+FbAw=", "commit"=>"Create Post"}
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "posts" ("created_at", "updated_at") VALUES ('2013-10-23 01:52:18.605659', '2013-10-23 01:52:18.605659')[0m
+Redirected to http://0.0.0.0:3000/posts/1
+Completed 302 Found in 150ms
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2013-10-22 18:52:18 -0700
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSQL (0.8ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 39ms (Views: 18.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-10-22 18:52:21 -0700
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered posts/index.html.erb within layouts/application (162.7ms)
+Completed 200 OK in 189ms (Views: 169.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-10-22 18:52:23 -0700
+  Processing by PostsController#new as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Rendered posts/_form.html.erb (9.0ms)
+Rendered posts/new.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 126ms (Views: 63.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-10-22 18:52:36 -0700
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mUser Load (1.6ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Rendered posts/index.html.erb within layouts/application (61.5ms)
+Completed 200 OK in 87ms (Views: 68.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2013-10-22 18:52:38 -0700
+  Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 89ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 18:52:38 -0700
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/index.html.erb within layouts/application (145.3ms)
+Completed 200 OK in 170ms (Views: 153.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 18:52:40 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.5ms)
+Rendered devise/registrations/new.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 69ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493161" for 127.0.0.1 at 2013-10-22 18:52:41 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493161"}
+Rendered text template (0.0ms)
+Sent data  (1.2ms)
+Completed 200 OK in 134ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-22 18:52:44 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (3.1ms)
+Rendered devise/sessions/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 100ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-22 18:53:32 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 124ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493212" for 127.0.0.1 at 2013-10-22 18:53:33 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493212"}
+Rendered text template (0.0ms)
+Sent data  (1.2ms)
+Completed 200 OK in 205ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-10-22 18:53:56 -0700
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cLBXYZuPK05XzSN4fxVQ04D8NUyYQbm+166Gf4A2rbM=", "user"=>{"email"=>"123@123.com", "password"=>"[FILTERED]", "remember_me"=>"0", "captcha"=>"4228c"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = '123@123.com') LIMIT 1[0m
+  [1m[35mAREL (39.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = '2013-10-23 01:53:57.357822', "sign_in_count" = 2, "updated_at" = '2013-10-23 01:53:57.358676' WHERE ("users"."id" = 1)
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 351ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 18:53:57 -0700
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mUser Load (1.7ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Rendered posts/index.html.erb within layouts/application (121.6ms)
+Completed 200 OK in 187ms (Views: 128.1ms | ActiveRecord: 2.5ms)
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (3.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20100904174213)
+Migrating to CreatePosts (20131023014531)
+  [1m[35mSQL (0.2ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("posts")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+  [1m[36mSQL (4.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20100904174213)
+Migrating to CreatePosts (20131023014531)
+  [1m[35mSQL (0.3ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  PRAGMA index_list("posts")
+  [1m[36mSQL (0.3ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.3ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36mSQL (0.2ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2013-10-22 18:58:21 -0700
+  Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 30ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 18:58:21 -0700
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/index.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 66ms (Views: 48.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 18:58:24 -0700
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/index.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 66ms (Views: 49.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 18:58:31 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.6ms)
+Rendered devise/registrations/new.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 70ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493511" for 127.0.0.1 at 2013-10-22 18:58:31 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493511"}
+Rendered text template (0.0ms)
+Sent data  (1.3ms)
+Completed 200 OK in 253ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-22 18:58:34 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 70ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493514" for 127.0.0.1 at 2013-10-22 18:58:34 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493514"}
+Rendered text template (0.0ms)
+Sent data  (1.1ms)
+Completed 200 OK in 127ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-10-22 18:58:56 -0700
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0hBYiFaEMqQpWoLVZWKqvs2zDaBmdFfzTRA5qjbZvms=", "user"=>{"email"=>"123@123.com", "password"=>"[FILTERED]", "remember_me"=>"0", "captcha"=>""}, "commit"=>"Sign in"}
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."email" = '123@123.com') LIMIT 1
+  [1m[36mAREL (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-10-23 01:53:57.357822', "current_sign_in_at" = '2013-10-23 01:58:57.004187', "sign_in_count" = 3, "updated_at" = '2013-10-23 01:58:57.005049' WHERE ("users"."id" = 1)[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 253ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 18:58:57 -0700
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered posts/index.html.erb within layouts/application (159.3ms)
+Completed 200 OK in 186ms (Views: 166.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2013-10-22 18:59:02 -0700
+  Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 52ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 18:59:03 -0700
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/index.html.erb within layouts/application (38.3ms)
+Completed 200 OK in 64ms (Views: 46.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 18:59:04 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.9ms)
+Rendered devise/registrations/new.html.erb within layouts/application (94.9ms)
+Completed 200 OK in 200ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493545" for 127.0.0.1 at 2013-10-22 18:59:05 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493545"}
+Rendered text template (0.0ms)
+Sent data  (1.1ms)
+Completed 200 OK in 136ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-22 18:59:07 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 111ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493547" for 127.0.0.1 at 2013-10-22 18:59:07 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493547"}
+Rendered text template (0.0ms)
+Sent data  (1.1ms)
+Completed 200 OK in 133ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 18:59:14 -0700
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/index.html.erb within layouts/application (77.9ms)
+Completed 200 OK in 106ms (Views: 87.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-10-22 18:59:19 -0700
+  Processing by PostsController#new as HTML
+Completed   in 23ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-22 18:59:20 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 110ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493560" for 127.0.0.1 at 2013-10-22 18:59:20 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493560"}
+Rendered text template (0.0ms)
+Sent data  (1.1ms)
+Completed 200 OK in 144ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 18:59:31 -0700
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/index.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 65ms (Views: 47.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2013-10-22 18:59:33 -0700
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSQL (0.8ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE ("posts"."id" = 1) LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 38ms (Views: 19.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2013-10-22 18:59:38 -0700
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 22ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-22 18:59:38 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 69ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493578" for 127.0.0.1 at 2013-10-22 18:59:38 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493578"}
+Rendered text template (0.0ms)
+Sent data  (1.1ms)
+Completed 200 OK in 137ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 18:59:47 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.8ms)
+Rendered devise/registrations/new.html.erb within layouts/application (89.7ms)
+Completed 200 OK in 129ms (Views: 98.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493587" for 127.0.0.1 at 2013-10-22 18:59:47 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493587"}
+Rendered text template (0.0ms)
+Sent data  (1.2ms)
+Completed 200 OK in 137ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 19:01:54 -0700
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 232ms (Views: 55.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2013-10-22 19:02:03 -0700
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 23ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-22 19:02:04 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.6ms)
+Rendered devise/sessions/new.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 139ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493724" for 127.0.0.1 at 2013-10-22 19:02:04 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493724"}
+Rendered text template (0.0ms)
+Sent data  (23.7ms)
+Completed 200 OK in 660ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 19:02:07 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.8ms)
+Rendered devise/registrations/new.html.erb within layouts/application (73.6ms)
+Completed 200 OK in 141ms (Views: 114.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493727" for 127.0.0.1 at 2013-10-22 19:02:07 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493727"}
+Rendered text template (0.0ms)
+Sent data  (1.1ms)
+Completed 200 OK in 133ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 19:02:14 -0700
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/index.html.erb within layouts/application (39.4ms)
+Completed 200 OK in 65ms (Views: 47.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-10-22 19:02:18 -0700
+  Processing by PostsController#new as HTML
+Completed   in 23ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-22 19:02:18 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.9ms)
+Rendered devise/sessions/new.html.erb within layouts/application (55.2ms)
+Completed 200 OK in 108ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493739" for 127.0.0.1 at 2013-10-22 19:02:19 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493739"}
+Rendered text template (0.0ms)
+Sent data  (1.1ms)
+Completed 200 OK in 141ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 19:02:26 -0700
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/index.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 66ms (Views: 48.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 19:03:07 -0700
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/index.html.erb within layouts/application (39.8ms)
+Completed 200 OK in 65ms (Views: 47.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 19:03:54 -0700
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/index.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 160ms (Views: 48.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-22 19:03:57 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 163ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493837" for 127.0.0.1 at 2013-10-22 19:03:57 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493837"}
+Rendered text template (0.0ms)
+Sent data  (1.1ms)
+Completed 200 OK in 141ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 19:04:04 -0700
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/index.html.erb within layouts/application (156.1ms)
+Completed 200 OK in 230ms (Views: 189.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 19:04:09 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.6ms)
+Rendered devise/registrations/new.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 88ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493849" for 127.0.0.1 at 2013-10-22 19:04:10 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493849"}
+Rendered text template (0.0ms)
+Sent data  (1.1ms)
+Completed 200 OK in 438ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 19:04:14 -0700
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (34.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/index.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 100ms (Views: 48.0ms | ActiveRecord: 34.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-10-22 19:04:16 -0700
+  Processing by PostsController#new as HTML
+Completed   in 23ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-22 19:04:16 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.9ms)
+Rendered devise/sessions/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 68ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493856" for 127.0.0.1 at 2013-10-22 19:04:16 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493856"}
+Rendered text template (0.0ms)
+Sent data  (1.0ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 19:05:10 -0700
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 96ms (Views: 26.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-10-22 19:05:14 -0700
+  Processing by PostsController#new as HTML
+Completed   in 62ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-22 19:05:14 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 72ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493914" for 127.0.0.1 at 2013-10-22 19:05:14 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493914"}
+Rendered text template (0.0ms)
+Sent data  (24.2ms)
+Completed 200 OK in 409ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 19:05:16 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.5ms)
+Rendered devise/registrations/new.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 69ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382493917" for 127.0.0.1 at 2013-10-22 19:05:17 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382493917"}
+Rendered text template (0.0ms)
+Sent data  (1.2ms)
+Completed 200 OK in 145ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20100904174213)
+Migrating to CreatePosts (20131023014531)
+  [1m[35mSQL (0.2ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("posts")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 19:09:19 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (3.3ms)
+Rendered devise/registrations/new.html.erb within layouts/application (51.6ms)
+Completed 200 OK in 109ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382494159" for 127.0.0.1 at 2013-10-22 19:09:19 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382494159"}
+Rendered text template (0.0ms)
+Sent data  (2.9ms)
+Completed 200 OK in 324ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-22 19:09:25 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.6ms)
+Rendered devise/sessions/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 69ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382494165" for 127.0.0.1 at 2013-10-22 19:09:25 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382494165"}
+Rendered text template (0.0ms)
+Sent data  (2.3ms)
+Completed 200 OK in 147ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 19:09:29 -0700
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/index.html.erb within layouts/application (44.8ms)
+Completed 200 OK in 106ms (Views: 54.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-10-22 19:09:31 -0700
+  Processing by PostsController#new as HTML
+Completed   in 22ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-22 19:09:31 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (3.0ms)
+Rendered devise/sessions/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 68ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382494171" for 127.0.0.1 at 2013-10-22 19:09:31 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382494171"}
+Rendered text template (0.0ms)
+Sent data  (1.3ms)
+Completed 200 OK in 138ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 19:13:39 -0700
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (30.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 189ms (Views: 46.7ms | ActiveRecord: 30.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 19:13:44 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.7ms)
+Rendered devise/registrations/new.html.erb within layouts/application (55.8ms)
+Completed 200 OK in 195ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382494424" for 127.0.0.1 at 2013-10-22 19:13:44 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382494424"}
+Rendered text template (0.0ms)
+Sent data  (3.2ms)
+Completed 200 OK in 466ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-22 19:13:48 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.6ms)
+Rendered devise/sessions/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 72ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382494428" for 127.0.0.1 at 2013-10-22 19:13:48 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382494428"}
+Rendered text template (0.0ms)
+Sent data  (1.1ms)
+Completed 200 OK in 132ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 19:13:51 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.6ms)
+Rendered devise/registrations/new.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 126ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382494431" for 127.0.0.1 at 2013-10-22 19:13:51 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382494431"}
+Rendered text template (0.0ms)
+Sent data  (1.1ms)
+Completed 200 OK in 126ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 19:24:01 -0700
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (14.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 109ms (Views: 44.0ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-22 19:24:04 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 82ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382495045" for 127.0.0.1 at 2013-10-22 19:24:05 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382495045"}
+Rendered text template (0.0ms)
+Sent data  (3.0ms)
+Completed 200 OK in 393ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-22 19:24:06 -0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.6ms)
+Rendered devise/registrations/new.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 71ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382495047" for 127.0.0.1 at 2013-10-22 19:24:07 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382495047"}
+Rendered text template (0.0ms)
+Sent data  (1.4ms)
+Completed 200 OK in 168ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-22 19:24:11 -0700
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (14.9ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/index.html.erb within layouts/application (38.3ms)
+Completed 200 OK in 79ms (Views: 46.8ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-10-22 19:24:13 -0700
+  Processing by PostsController#new as HTML
+Completed   in 22ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-22 19:24:13 -0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.6ms)
+Rendered devise/sessions/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 70ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1382495053" for 127.0.0.1 at 2013-10-22 19:24:13 -0700
+  Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1382495053"}
+Rendered text template (0.0ms)
+Sent data  (1.0ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
