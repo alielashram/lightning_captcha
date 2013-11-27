@@ -9,3 +9,7 @@ This is an example app I used to give a lighting talk on implementing the captch
 ## Information
 
 ![Screenshot 1](app/assets/images/Screen shot 2013-10-22 at 7.13.56 PM.png)
+
+## License
+
+MIT: http://aliel.mit-license.org/
